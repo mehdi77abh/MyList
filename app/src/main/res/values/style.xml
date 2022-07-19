@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/action_button_height</item>
+        <item name="android:minWidth">@dimen/action_button_min_width</item>
+        <item name="android:paddingLeft">@dimen/action_button_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/action_button_padding_horizontal</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textSize">@dimen/action_button_text_size</item>
+    </style>
+
+    <style name="MyBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/bottom_navigation_item_color</item>
+        <item name="itemTextColor">@color/bottom_navigation_item_color</item>
+        <item name="itemRippleColor">@color/bottom_navigation_ripple_color</item>
+        <item name="itemTextAppearanceActive">@style/ActiveItemBottomNavigationTextAppearance</item>
+    </style>
+
+    <style name="ActiveItemBottomNavigationTextAppearance" parent="TextAppearance.MyTheme.Caption">
+        <item name="fontFamily">@font/primary_bold</item>
+
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_dialog</item>
+    </style>
+</resources>

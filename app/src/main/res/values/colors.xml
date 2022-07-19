@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#262A35</color>
+    <color name="darkGray">#575758</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#EFEFEF</color>
+    <color name="reportBackgroundColor">#D287FFF3</color>
+    <color name="customColor">#000000</color>
+
+
+    <color name="color1">#2062af</color>
+    <color name="color2">#FB00EE</color>
+    <color name="color4">#DD3E48</color>
+    <color name="color6">#237A26</color>
+    <color name="color7">#A81002</color>
+    <color name="color8">#8D29F1</color>
+    <color name="color10">#5A709C</color>
+    <color name="color11">#23528C</color>
+
+    <color name="red">#D02010</color>
+
+
+    <color name="blue">#0E5AF3</color>
+    <color name="window_background">#00000000</color>
+    <color name="black_de">#000000</color>
+
+    <color name="importance_high">#EC0B0B</color>
+    <color name="importance_normal">#E6C418</color>
+    <color name="importance_low">#27CF39</color>
+
+</resources>

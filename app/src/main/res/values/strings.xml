@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">تسک آسا</string>
+    <string name="home">خانه</string>
+    <string name="calendar">تقویم</string>
+    <string name="note">یادداشت</string>
+    <string name="search">جستجو</string>
+    <string name="clearAll">حذف همه</string>
+    <string name="addNewGroup">دسته بندی جدید</string>
+    <string name="goodMorning">صبح بخیر</string>
+    <string name="goodNoon">ظهر بخیر</string>
+    <string name="goodEvening">عصر بخیر</string>
+    <string name="goodNight">شب بخیر</string>
+    <string name="chooseOneColor">یک رنگ را انتخاب کنید</string>
+    <string name="enterGroupTitle">عنوان دسته را وارد کنید</string>
+    <string name="save">ذخیره</string>
+    <string name="addNewGroupTitle">افزودن دسته بندی جدید</string>
+    <string name="pleaseSelectYourIcon">لطفا ایکون خود را انتخاب کنید</string>
+    <string name="addNewTask">افزودن یادداشت جدید</string>
+    <string name="addTaskTitle">عنوان یادداشت</string>
+    <string name="addTaskDescription">توضیحات</string>
+    <string name="hour">ساعت</string>
+    <string name="date">تاریخ</string>
+    <string name="normal">معمولی</string>
+    <string name="important">مهم</string>
+    <string name="necessary">ضروری</string>
+    <string name="findYourNote">یادداشت خود را جستجو کنید</string>
+    <string name="newNote">یادداشت جدید</string>
+    <string name="pleaseSelectDateCurrectly">لطقا تاریخ را به درستی انتخاب کنید</string>
+    <string name="addPicture">اضافه کردن تصویر</string>
+    <string name="editPicture">ویرایش کردن تصویر</string>
+    <string name="editGroup">ویرایش دسته بندی</string>
+    <string name="deleteGroup">پاک کردن دسته بندی</string>
+    <string name="edit">ویرایش</string>
+    <string name="today">امروز</string>
+    <string name="noteTitle">یادداشت ساده</string>
+    <string name="editTaskTitle">ویرایش یادداشت</string>
+    <string name="editTaskSuccess">ویرایش با موفقیت انجام شد</string>
+
+    <string name="alertDialogMessageGroup">آیا میخواهید همه دسته ها را پاک کنید؟</string>
+    <string name="alertDialogMessageTask">آیا میخواهید همه یادداشت ها را پاک کنید؟</string>
+
+    <string name="alertDialogTitleGroup">حذف همه دسته ها</string>
+    <string name="alertDialogTitleTask">حذف همه یادداشت ها</string>
+
+    <string name="alertDialogOneTaskMessage">آیا میخواهید این یادداشت را پاک کنید؟ا</string>
+    <string name="alertDialogDeleteOneTaskTitle">حذف یک یادداشت</string>
+
+    <string name="alertDialogDeleteOneGroup">آیا میخواهید این دسته بندی را پاک کنید؟</string>
+    <string name="alertDialogDeleteOneGroupTitle">حذف یک دسته بندی</string>
+
+
+    <string name="yes">بله</string>
+    <string name="no">خیر</string>
+    <string name="chooseGroup">دسته را انتخاب کنید</string>
+    <string name="chooseOneGroup">یک گروه را انتخاب کنید</string>
+    <string name="clickForAddNewGroup">برای ایجاد یک گروه جدید کلیک کنید</string>
+    <string name="dismiss">لغو</string>
+    <string name="reports">گزارشات</string>
+    <string name="doneTasksTitle">لیست یادداشت های انجام شده:</string>
+    <string name="notDoneTasks">تعداد انجام نشده:</string>
+    <string name="doneTaskNumber">تعداد انجام شده ها:</string>
+    <string name="allGroup">کل دسته ها:</string>
+    <string name="percentOfSuccessTasks">درصد موفقیت در انجام:</string>
+
+</resources>

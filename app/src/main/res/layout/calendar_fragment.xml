@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/todayBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="?selectableItemBackgroundBorderless"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/todayTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:text="@string/today"
+                    android:textAppearance="?textAppearanceBody1"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/dayOfMonthTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:textAppearance="?textAppearanceHeadline6"
+                    android:textColor="?colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/todayTv"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="25" />
+
+                <TextView
+                    android:id="@+id/monthNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toTopOf="@+id/yearTv"
+                    app:layout_constraintStart_toEndOf="@+id/dayOfMonthTv"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="مهر" />
+
+                <TextView
+                    android:id="@+id/yearTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/monthNameTv"
+                    app:layout_constraintTop_toBottomOf="@+id/monthNameTv"
+                    tools:text="1401" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </FrameLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+
+        <FrameLayout
+            android:id="@+id/monthFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/calendar_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/monthFrameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAppearance="?textAppearanceHeadline6"
+                tools:text="مهر" />
+
+            <ImageView
+                android:id="@+id/nextMonthBtn"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="24dp"
+                app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+            <ImageView
+                android:id="@+id/pervMonthBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="24dp"
+
+                app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        </FrameLayout>
+
+
+        <com.mohamadian.persianhorizontalexpcalendar.PersianHorizontalExpCalendar
+            android:id="@+id/persianCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+
+            app:bottom_container_height="30dp"
+            app:center_container_expanded_height="320dp"
+            app:initial_view="Week"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/monthFrameLayout"
+            app:mark_selected_day="true"
+
+            app:mark_today="true"
+            app:range_months_after_init="12"
+            app:range_months_before_init="12"
+            app:top_container_height="0dp"
+            app:use_RTL_direction="true" />
+
+        <!--    <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="20dp"
+              tools:text="تاریخ انتخابی شما: "
+              android:textAppearance="?textAppearanceBody2" />
+
+        <TextView
+              android:id="@+id/selectedDateTv"
+              android:layout_width="match_parent"
+              android:layout_height="36dp"
+
+              android:layout_marginStart="24dp"
+              android:layout_marginTop="8dp"
+              android:layout_marginEnd="24dp"
+              android:background="@drawable/background_tv"
+              android:backgroundTint="?colorSecondary"
+
+              android:gravity="center"
+              android:textAppearance="?textAppearanceBody1"
+              android:textColor="?colorOnSecondary"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/persianCalendar"
+              tools:text="یکشنبه 12 تیر 1401" />-->
+
+        <TextView
+            android:id="@+id/addTaskForDateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/dotted"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:textAppearance="?textAppearanceBody2"
+            tools:text="افزودن یادداشت برای "
+
+            />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/calendarCoordinator"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+        <include layout="@layout/view_default_empty_state"
+            android:id="@+id/calendarEmptyState"
+            android:layout_gravity="center"
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tasksListRv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
